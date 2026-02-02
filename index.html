@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Jogos do José e Ravenos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header class="app-header glass">
+        <h1>José e Ravenos</h1>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar personagem ou país...">
+        </div>
+    </header>
+
+    <main class="app-content">
+        <nav class="filter-carousel">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="brasil">Brasil 🇧🇷</button>
+            <button class="filter-btn" data-filter="eua">EUA 🇺🇸</button>
+            <button class="filter-btn" data-filter="japao">Japão 🇯🇵</button>
+            <button class="filter-btn" data-filter="uk">Reino Unido 🇬🇧</button>
+        </nav>
+
+        <section id="explore-section" class="products-grid">
+            <div class="card-link" data-category="brasil" data-name="Roblox Brasil" data-desc="O gingado brasileiro no mundo dos blocos!">
+                <article class="product-card glass">
+                    <img src="https://tr.rbxcdn.com/3093258525e98545e888632662283e30/420/420/Avatar/Png" alt="Brasil">
+                    <div class="card-info">
+                        <h3>Skin Brasil</h3>
+                        <span class="cat">Brasil</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="card-link" data-category="eua" data-name="Roblox EUA" data-desc="Estilo herói americano pronto para ação.">
+                <article class="product-card glass">
+                    <img src="https://tr.rbxcdn.com/f04407b89793570624d78810c950d877/420/420/Avatar/Png" alt="EUA">
+                    <div class="card-info">
+                        <h3>Skin USA</h3>
+                        <span class="cat">EUA</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="card-link" data-category="japao" data-name="Roblox Japão" data-desc="A honra dos samurais em versão Roblox.">
+                <article class="product-card glass">
+                    <img src="https://tr.rbxcdn.com/7100b70d588523b183616781f7f08573/420/420/Avatar/Png" alt="Japão">
+                    <div class="card-info">
+                        <h3>Skin Japão</h3>
+                        <span class="cat">Japão</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="product-modal" class="modal glass">
+        <button id="close-modal" class="close-btn">✕</button>
+        <div class="modal-body">
+            <img id="modal-img" src="" alt="">
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <button class="action-btn">Selecionar Personagem</button>
+        </div>
+    </div>
+
+    <nav class="bottom-nav glass">
+        <div class="nav-item active">🏠<span>Home</span></div>
+        <div class="nav-item">🎮<span>Skins</span></div>
+        <div class="nav-item">🌍<span>Países</span></div>
+    </nav>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

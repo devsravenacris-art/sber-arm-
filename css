@@ -1,0 +1,58 @@
+:root {
+    --primary: #00d4ff;
+    --bg: #050a12;
+    --glass: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0; background: var(--bg); color: white;
+    font-family: 'Poppins', sans-serif; overflow-x: hidden;
+}
+
+.glass {
+    background: var(--glass); backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.app-header {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    padding: 15px; border-radius: 0 0 20px 20px; text-align: center;
+}
+
+.search-box input {
+    width: 90%; padding: 10px; border-radius: 10px; border: none; background: #1a2230; color: white;
+}
+
+.app-content { padding: 140px 15px 80px; }
+
+.filter-carousel {
+    display: flex; overflow-x: auto; gap: 10px; padding-bottom: 15px;
+}
+.filter-carousel::-webkit-scrollbar { display: none; }
+
+.filter-btn {
+    background: var(--glass); color: white; border: none;
+    padding: 8px 15px; border-radius: 20px; white-space: nowrap;
+}
+.filter-btn.active { background: var(--primary); color: black; }
+
+.products-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 15px;
+}
+
+.product-card { border-radius: 20px; padding: 10px; text-align: center; }
+.product-card img { width: 100%; filter: drop-shadow(0 5px 10px rgba(0,212,255,0.4)); }
+
+.bottom-nav {
+    position: fixed; bottom: 0; width: 100%; height: 70px;
+    display: flex; justify-content: space-around; align-items: center;
+}
+
+/* Modal Estilo Slide-up */
+.modal {
+    position: fixed; top: 100%; left: 0; width: 100%; height: 80%;
+    z-index: 1000; transition: 0.4s; border-radius: 30px 30px 0 0; padding: 30px;
+}
+.modal.open { top: 20%; }
+.close-btn { position: absolute; top: 20px; right: 20px; background: none; color: white; border: none; font-size: 24px; }
+.action-btn { width: 100%; padding: 15px; background: var(--primary); border: none; border-radius: 15px; font-weight: bold; margin-top: 20px; }

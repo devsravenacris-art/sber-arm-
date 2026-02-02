@@ -1,0 +1,43 @@
+# 📱 Dimensão Eletrônica - App PWA
+
+Este é um projeto de um catálogo de eletrônicos transformado em **Progressive Web App (PWA)**. O objetivo é oferecer uma experiência de aplicativo nativo rodando diretamente do navegador, com suporte a modo offline e instalação na tela inicial.
+
+## 🚀 Funcionalidades
+
+- **Design Glassmorphism:** Interface moderna com efeitos de transparência e desfoque.
+- **Busca em Tempo Real:** Filtre produtos por nome instantaneamente.
+- **Categorização:** Filtros rápidos para Celulares, Tablets, Games, etc.
+- **Offline First:** Graças ao Service Worker, o app carrega mesmo sem conexão com a internet.
+- **Instalável:** Pode ser adicionado à tela inicial do Android e iOS como um app nativo.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **HTML5:** Estrutura semântica.
+* **CSS3:** Estilização avançada com Flexbox e Grid.
+* **JavaScript (Vanilla):** Lógica de filtros e registro de Service Worker.
+* **Manifest JSON:** Configurações de instalação do app.
+* **Service Workers:** Gerenciamento de cache e modo offline.
+
+## 📂 Como configurar o projeto
+
+1.  **Clone o projeto** ou baixe os arquivos.
+2.  Certifique-se de que a estrutura de pastas está assim:
+    ```text
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    ├── sw.js
+    ├── manifest.json
+    └── src/ (imagens dos produtos)
+    ```
+3.  Abra a pasta no **VS Code**.
+4.  Use a extensão **Live Server** para rodar o projeto localmente.
+
+## 📲 Como instalar no celular
+
+1.  Acesse a URL do projeto (via GitHub Pages ou seu IP local).
+2.  **No Android (Chrome):** Clique nos três pontos e em "Instalar Aplicativo".
+3.  **No iOS (Safari):** Clique no botão de compartilhar e em "Adicionar à Tela de Início".
+
+---
+Desenvolvido com 💙 por [Seu Nome/Devs Ravena Cris] durante a Imersão Tech 2025.
